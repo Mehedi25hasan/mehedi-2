@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0 auto;
+}
+/*FONT --- font-family: 'Oswald', sans-serif;*/
+/*MAIN MENU STRACTURE START*/
+body {
+    background: #ddd;
+}
+.left-logo {
+    /* width: 20%; */
+    float: left;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight:800;
+    /* font-size: 35px; */
+}
+span.Mehe {
+    font-size: 32px;
+    color: #f7f7f7;
+}
+
+span.Hasa {
+    font-size: 32px;
+    color: #ffaf01;
+}
+
+nav.Main-Nav>ul>li>a {
+    text-decoration: none;
+    background: #13275d;
+    color: white;
+    margin: 0;
+    padding: 1px 18px;
+    line-height: 52px;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    font-size: 19px;
+}
+
+nav.Main-Nav>ul>li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav.Main-Nav>ul {
+    float: right;
+}
+
+nav.Main-Nav {
+    background: #13275d;
+    overflow: hidden;
+    min-height: 50px;
+}
+/*MAIN MENU STRACTURE END*/
+
+/*DropDown menu Start*/
+
+ul.Drop-Menu {
+    position: absolute;
+    background: #FFFFFF;
+    width: 150px;
+    padding: 0px;
+    transform: scaleY(0);
+    transition: all 0.6s;
+    transform-origin: top;
+}
+
+ul.Drop-Menu>li>a {
+    color: #4a83a5;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid #354a5f;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Oswald';
+}
+
+ul.Drop-Menu>li {
+    list-style: none;
+    display: inline;
+    line-height: 40px;
+
+}
+nav.Main-Nav>ul>li:hover .Drop-Menu{
+    transform: scaleY(1);
+
+}
+ul.Drop-Menu>li:last-child a {
+    /* background: red; */
+    border-bottom: none;
+}
+ul.Drop-Menu>li>a:hover {
+    background: #13275d;
+    color: white;
+    transition: 0.4s;
+    /*font-weight: bold;*/
+}
+nav.Main-Nav>ul>li>a:hover {
+    background: #ffaf01;
+    transition: .4s;
+    color: black;
+}
+
+/*-----------------------------------------*/
+
+
+h1,p{
+    font-family: 'Montserrat', sans-serif;
+}
+h2,h3,h4,h5{
+    font-family: 'Roboto', sans-serif;
+}
+section {
+    background: #99999900;
+    width: 100%;
+    height: 740px;
+    margin-top: -30px;
+}
+
+.experience-area {
+    text-align: center;
+}
+
+.experience-area h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 45px;
+    color: #13275d;
+}
+
+.experience-area hr {
+    width: 60px;
+    height: 5px;
+    background: #ffaf01;
+    margin: 0 auto;
+    border: none;
+}
+
+.experience-area p {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 18px;
+}
+
+.pic-area-all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.single-area {
+    /* width: 550px; */
+    width: 30%;
+    height: auto;
+    background: #13275d00;
+    box-shadow: 0px 0px 17px 1px #354a5f;
+    text-align: center;
+    display: inline-block;
+}
+
+.single-area img {
+    border-radius: 50%;
+    border: 7px solid #f5eeee8c;
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+}
+
+.single-area .icons i {
+    margin: 6px;
+    font-size: 20px;
+}
+
+.area-footer {
+    margin-top: 40px;
+    background: #13275d;
+    padding: 30px;
+}
+
+.area-footer h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.area-footer h4 {
+    color: #dcdcdc;
+    font-size: 21px;
+}
+.experience-area p {
+    width: 800px;
+    margin: auto;
+    font-size: 16px;
+}
+.FB{
+    color: #2176e9;
+}
+.YOU{
+    color:red;
+}
+.Twit{
+    color: #0b9eff;
+}
+.FAB{
+    color: #ff608d;
+}
+
+.single-area:hover {
+    background: #13275d;
+    border-radius: 5px;
+    transition: 0.5s;
+}
